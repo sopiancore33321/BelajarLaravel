@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
         // $this->call(NamaKelasSeeder::class);
         // $this->call(BukutabunganSeender::class);
         // $this->call(SiswaSeeder::class);
-        $this->call(GajiSeeder::class);
-    }
+        // $this->call(GajiSeeder::class);
+
+        $this->call('RelasiSeeder');
+		# Tampilkan informasi berikut bila Seeder telah dilakukan
+		$this->command->info('RelasiSeeder berhasil.');
+    }   
+    
 }
