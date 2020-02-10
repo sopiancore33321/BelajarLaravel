@@ -13,11 +13,11 @@ class BukuSeeder extends Seeder
     public function run()
     {
        $buku = new Buku;
-       $buku->judul = 'kojnhyh PHP';
-       $buku->jumlah_halaman = 100;
-       $buku->penerbit = 'dwadwad Pustaka';
-       $buku->synopsis = 'awdwadini adaawdwadlah......';
-       $buku->status = 4;
+       $buku->judul = 'buku ini cerita  siapa';
+       $buku->jumlah_halaman = 2000;
+       $buku->penerbit = 'cv fruit gh';
+       $buku->synopsis = 'buku ini ini......';
+       $buku->status = 1;
        $buku->save();
     }
 }

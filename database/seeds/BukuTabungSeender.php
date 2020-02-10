@@ -1,6 +1,6 @@
 <?php
 
-use App\Bukutabungan;
+use App\BukuTabungan;
 use Illuminate\Database\Seeder;
 
 class BukuTabungSeender extends Seeder
@@ -12,8 +12,6 @@ class BukuTabungSeender extends Seeder
      */
     public function run()
     {
-        $bukutabungan = new Bukutabungan;
-       
-        $bukutabungan->save();
+   
     }
 }

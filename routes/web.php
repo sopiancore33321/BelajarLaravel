@@ -1,5 +1,9 @@
 <?php
 
+use App\Buku;
+use App\Siswa;
+use Illuminate\Database\Seeder;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,7 +14,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\Buku;
+
 
 Route::get('/', function () {
    return buku::all();
@@ -102,3 +106,76 @@ return $data;
 
 
 //        });
+
+Route::get('Contoh','ContohController@latihan');
+
+Route::get('profil','ContohController@latihan2');
+
+Route::get('profil2','ContohController@latihan3');
+
+Route::get('profil3','ContohController@latihan4');
+
+// soal biodata
+
+Route::get('biodata','LatihanController@latihan6');
+// Route::get('menu/{pizza?}','ContohController@latihan7');
+
+Route::get('menu/{mkn?}/{js?}/{hg?}','ContohController@menu');
+// Route::get('Buku','BukuController@index');
+
+Route::get('buku','BukuController@buat_data');
+
+// crud buku
+
+Route::get('get-buku','BukuController@index');
+Route::get('create-buku/{judul}','BukuController@buat_data');
+Route::get('get-buku/{id}','BukuController@show');
+Route::get('delete-buku/{id}','BukuController@delete');
+Route::get('upadate-buku/{id}','BukuController@update');
+Route::get('hitung-buku/{id}','BukuController@hitungbuku');
+
+// curd pegawai
+Route::get('/pegawai','PegawaiController@index');
+Route::get('/pegawai/tambah','PegawaiController@tambah');
+Route::post('/pegawai/store','PegawaiController@store');
+Route::post('/pegawai/update','PegawaiController@update');
+Route::get('/pegawai/edit/{id}','PegawaiController@edit');
+Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+// soal crud 
+
+Route::get('get-siswa','SiswaController@index');
+Route::get('create-siswa/{nama}','SiswaController@buat_siswa');
+Route::get('get-siswa/{id}','SiswaController@showsiswa');
+Route::get('delete-siswa/{id}','SiswaController@deletesiswa');
+Route::get('upadate-siswa/{id}','SiswaController@updatesiswa');
+Route::get('hitung-siswa/{id}','SiswaController@hitungsiswa');
+
+// Passing Data 
+Route::get('pass','latihanController@pass');
+Route::get('status/{o?}','latihanController@status');
+Route::get('buku','latihanController@loop');
+
+
+// Book
+
+Route::get('book','BukuController@index');
+Route::get('book/{id}','BukuController@show');
+
+// Gajian
+
+
+Route::get('gajian','GajiController@index');
+Route::get('gajian/{id}','GajiController@show');
+
+
+
+
+
+
+
+
+
+
+
+
+

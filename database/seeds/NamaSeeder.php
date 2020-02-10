@@ -1,9 +1,8 @@
 <?php
 
-use App\Penulis;
 use Illuminate\Database\Seeder;
 
-class PenulisSeeder extends Seeder
+class NamaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,7 +11,6 @@ class PenulisSeeder extends Seeder
      */
     public function run()
     {
-        $penulis = new penulis;
-  
+        //
     }
 }
