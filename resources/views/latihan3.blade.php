@@ -30,6 +30,7 @@
     @php $keterangan = 'Pembeli Cerdas' @endphp
     @php $keterangan = 'Pembeli Kurang Cerdas' @endphp
     @endif
+    
     status = {{ $status }} <hr>
     keterangan = {{ $keterangan }}
 <hr>

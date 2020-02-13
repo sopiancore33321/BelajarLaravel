@@ -26,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // use Illuminate\Support\facedes\schema;
         // schema : 
+        
 
         schema::defaultStringLength(191);
     }
